@@ -32,3 +32,74 @@
   font-weight: 700;
   font-style: italic;
 }
+/*Root to the webpage*/
+:root {
+  /* Primary & Accent Palette */
+  --color-primary: #1e293b;        /* Deep Slate Navy — high contrast, authoritative yet warm */
+  --color-primary-hover: #0f172a;  /* Slightly darker blue for active states */
+  --color-accent: #c27803;         /* Warm Amber/Gold — inviting, high-contrast accent */
+  --color-accent-hover: #a16207;   /* Darker Gold for hover states */
+
+  /* Surface & Background Colors */
+  --bg-page: #fafaf9;              /* Warm Off-White — soft on elderly eyes, avoids harsh screen glare */
+  --bg-card: #ffffff;              /* Pure White for card container contrast */
+  --bg-subtle: #f1f5f9;            /* Cool Light Grey for controls & secondary elements */
+  --bg-subtle-hover: #e2e8f0;      /* Slightly darker grey for player hover states */
+
+  /* Text & Typography (Ensures 7:1+ contrast ratios for readability) */
+  --text-main: #0f172a;            /* Almost Black — clear readability for vision impairments */
+  --text-muted: #475569;           /* Dark Slate — soft secondary text that stays legible */
+  --text-inverse: #ffffff;         /* Light text for dark backgrounds */
+
+  /* Borders & Shadows */
+  --border-card: #e2e8f0;          /* Soft border to define boundaries clearly */
+  --shadow-card: 0 4px 12px rgba(15, 23, 42, 0.06); /* Soft elevation */
+}
+
+/*Different Headers to Webpage*/
+
+
+/*Navigation Section*/
+/* Navigation container */
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  position: relative;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  /* Adjust to match your theme */
+  padding: 8px 12px;
+  display: block;
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  list-style: none;
+  padding: 10px 0;
+  min-width: 160px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu li a {
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
