@@ -2,7 +2,7 @@
 .merriweather {
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 200, 400, 600, 800;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -54,6 +54,26 @@
   /* Borders & Shadows */
   --border-card: #e2e8f0;          /* Soft border to define boundaries clearly */
   --shadow-card: 0 4px 12px rgba(15, 23, 42, 0.06); /* Soft elevation */
+
+  /* clamp(MIN, PREFERRED, MAX) */
+  --fs-h1: clamp(2rem, 4vw + 1rem, 3.5rem);
+  --fs-h2: clamp(1.75rem, 3vw + 1rem, 2.75rem);
+  --fs-h3: clamp(1.5rem, 2vw + 0.8rem, 2.25rem);
+  --fs-h4: clamp(1.25rem, 1vw + 0.8rem, 1.75rem);
+}
+
+/* Applying the custom properties to headings */
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+
+
+/*CSS Basics*/
+*{
+ margin: 0; 
+ padding: 0;
+ box-sizing: border-box;
 }
 
 /*Different Headers to Webpage*/
