@@ -76,15 +76,28 @@ h4 { font-size: var(--fs-h4); }
  box-sizing: border-box;
 }
 
-/*Different Headers to Webpage*/
+/*ID naming and behavoir*/
+#center-me{
+  text-align: center;
+}
 
+/*Different Headers to Webpage*/
+h1.header{
+  color: var(--color-primary);
+  font-size: clamp(2.5em, 4vw, 1.5em);
+}
+
+h2.sub-header{
+  color: var(--color-primary-hover);
+  font-size: clamp(1.5em, 2vw, 1em);
+}
 
 /*Navigation Section*/
 /* Navigation container */
 .navigation {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   padding: 0;
   margin: 0;
 }
@@ -95,7 +108,7 @@ h4 { font-size: var(--fs-h4); }
 
 .navigation a {
   text-decoration: none;
-  color: white;
+  color: var(--text-main);
   /* Adjust to match your theme */
   padding: 8px 12px;
   display: block;
@@ -107,7 +120,7 @@ h4 { font-size: var(--fs-h4); }
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #222;
+  background-color: var(--bg-card);
   list-style: none;
   padding: 10px 0;
   min-width: 160px;
@@ -122,4 +135,22 @@ h4 { font-size: var(--fs-h4); }
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+/*Index.html css code*/
+ul.social-icons{
+  display: flex;
+  justify-content: center; /* Horizontally centers the icons */
+  align-items: center;     /* Vertically centers the icons */
+  gap: 10px;               /* Adds space between the icons */
+  list-style: none;
+}
+
+
+
+/*Images of the webpage section*/
+.logo-image {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
 }
