@@ -60,6 +60,11 @@
   --fs-h2: clamp(1.75rem, 3vw + 1rem, 2.75rem);
   --fs-h3: clamp(1.5rem, 2vw + 0.8rem, 2.25rem);
   --fs-h4: clamp(1.25rem, 1vw + 0.8rem, 1.75rem);
+  
+  --p-important: 1.2em;
+  --p-text: 1.15em;
+  --p-prayer: 0.95em;
+  --p-bible: 1em;
 }
 
 /* Applying the custom properties to headings */
@@ -74,6 +79,19 @@ h4 { font-size: var(--fs-h4); }
  margin: 0; 
  padding: 0;
  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--bg-page);
+}
+
+section{
+  border-bottom: 1px solid black;
+  padding: 15px 5px;
 }
 
 /*ID naming and behavoir*/
@@ -138,14 +156,37 @@ h2.sub-header{
 }
 
 /*Index.html css code*/
+
 ul.social-icons{
   display: flex;
   justify-content: center; /* Horizontally centers the icons */
   align-items: center;     /* Vertically centers the icons */
   gap: 10px;               /* Adds space between the icons */
   list-style: none;
+  margin-bottom: 10px;
 }
 
+h2.main-header{
+  color: var(--color-accent);
+  font-size: var(--fs-h3);
+  margin-bottom: 15px;
+}
+
+p.main-text{
+  color: var(--color-accent-hover);
+  padding: 20px;
+}
+
+p.main-sub-header{
+  padding: 15px;
+  font-size: var(--p-prayer);
+}
+
+p.main-about{
+  padding: 30px 15px;
+  color: var(--color-accent);
+  line-height: 2.5;
+}
 
 
 /*Images of the webpage section*/
