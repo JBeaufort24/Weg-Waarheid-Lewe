@@ -1,3 +1,46 @@
 FOr this section of the website I added the html files to a separete section for easier navigation in the future and for developer to understand the flow easier.
 The navigation bar will be much easier to set up in this format.
-And because of the sie of the webpage this method insures the page flows correctly and everthing is much easier to find to edit or to add on to later as the page grows and improves
+And because of the sie of the webpage this method insures the page flows correctly and everthing is much easier to find to edit or to add on to later as the page grows and improves.
+For the layout of the webages, this is the style used with all the added and required meta info for the SEO's.
+The Icon pack used in the webpage is the property of Beafort Digital Productions, and sould not be used outside this webpage.
+The fonts used in the webpage has been slected for the reason of easy reading and following style
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weg Waarheid en Lewe - Welkom by Beréa Christen Gemeente (Gereformeerd)</title>
+  <!--Meta information for the SEO's of a webpage-->
+  <meta name="title" content="Weg Waarheid en Lewe - Welkom by Beréa Christen Gemeente (Gereformeerd)">
+  <meta name="description" content="Ons is Onvolmaakte mense in diens van die Drie Enige God – Vader, Seun en Heilige Gees.
+Die Woord is sentraal in ons gemeente en ons poog om in Liefde die Kosbare Woord uit te leef na mekaar en na buite.">
+  <meta name="keywords" content="Weg, Waarheid, Lewe, Kerk, Gereformeerd">
+  <meta name="author" content="Beaufort Digital Productions">
+  <meta name="robots" content="index, follow">
+
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Weg Waarheid en Lewe - Welkom by Beréa Christen Gemeente (Gereformeerd)">
+  <meta property="og:description" content="Ons is Onvolmaakte mense in diens van die Drie Enige God – Vader, Seun en Heilige Gees.
+Die Woord is sentraal in ons gemeente en ons poog om in Liefde die Kosbare Woord uit te leef na mekaar en na buite.">
+  <meta property="og:image" content="">
+  <meta property="og:site_name" content="Gereformeerd Kerk">
+  
+  <!--CSS files for the webpage-->
+  <<link rel="stylesheet" href="/weg-waarheid-lewe.css.css">
+  
+  <!--Font Family description-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+  </style>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    
+  <!--Icon Pack for the Webpage-->
+  <script src="https://kit.fontawesome.com/da0dc91fd8.js" crossorigin="anonymous"></script>
+
+  </head>
+
