@@ -94,6 +94,10 @@ section{
   padding: 15px 5px;
 }
 
+p{
+  padding: 10px 0;
+}
+
 /*ID naming and behavoir*/
 #center-me{
   text-align: center;
