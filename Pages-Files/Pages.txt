@@ -1,0 +1,3 @@
+FOr this section of the website I added the html files to a separete section for easier navigation in the future and for developer to understand the flow easier.
+The navigation bar will be much easier to set up in this format.
+And because of the sie of the webpage this method insures the page flows correctly and everthing is much easier to find to edit or to add on to later as the page grows and improves
