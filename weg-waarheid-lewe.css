@@ -223,6 +223,47 @@ a button:hover{
   color: var(--text-inverse);
 }
 
+.uitreike-sub p{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.colins-house, .abraham-kriel-bermuda{
+  margin: 0 30px;
+}
+.uitreike-images{
+  display: flex;
+}
+
+.uitreike-images img{
+  width: 300px;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.kriel-grid, .colins-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.uitreike-card{
+  max-width: 200px;
+  background: var(--bg-card);
+  border-radius: 5px;
+  align-content: center;
+  display: block;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically (if container has height) */
+}
+
+.uitreike-card a{
+  font-size: 1.5em;
+}
+
+
 /*Images of the webpage section*/
 .logo-image {
     width: 300px;
