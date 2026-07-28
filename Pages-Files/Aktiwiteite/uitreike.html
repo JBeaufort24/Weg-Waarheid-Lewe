@@ -50,25 +50,31 @@ Die Woord is sentraal in ons gemeente en ons poog om in Liefde die Kosbare Woord
       <li><a href="https://www.facebook.com/groups/402742020242719/" target="_blank"><i class="fa-brands fa-facebook fa-lg" style="color: #3b5998;"></i></a></li>
       <li><a href="https://www.facebook.com/groups/402742020242719/" target="_blank"><i class="fa-brands fa-youtube fa-lg" style="color: #ff0000;"></i></a></li>
     </ul>
-    <nav>
-      <ul class="navigation">
-        <li><a href="/index.html">Tuis</a></li>
-        <li><a href="/Pages-Files/preke.html">Preke</a></li>
-        <li><a href="/Pages-Files/bybelstudies.html">Bybelstudies</a></li>
-        <li><a href="/Pages-Files/oordenkings.html">Oordenkkings</a></li>
-        <li class="dropdown">
-          <a href="/Pages-Files/aktiwiteite.html">Aktiwiteite &#9662;</a>
-          <ul class="dropdown-menu">
-            <li><a href="/Pages-Files/Aktiwiteite/uitreike.html">Uitreike</a></li>
-            <li><a href="/Pages-Files/Aktiwiteite/vrouebybelstudies.html">Vroue Bybelstudies</a></li>
-            <li><a href="/Pages-Files/Aktiwiteite/kinderbediening(laerskool).html">Kinderbediening (Laerskool)</a></li>
-            <li><a href="/Pages-Files/Aktiwiteite/kinderbedining(voorskool).html">Kinderbediening (Voorskool - Graad 2)</a></li>
-            <li><a href="/Pages-Files/Aktiwiteite/inleidingtotdiebybelboeke2026.html">Inleiding Tot Die Bybel Boeke 2026</a></li>
-          </ul>
-        </li>
-        <li><a href="/Pages-Files/hulpbronne.html">Hulpbronne</a></li>
-        <li><a href="/Pages-Files/audio-uitsending.html">Audio - Uitsending</a></li>
-        <li><a href="/Pages-Files/kontakons.html">Kontak Ons</a></li>
+    
+    <div class="parent-container">
+      <button id="open-nav" class="nav-toggle-btn" aria-label="Open Navigation Menu" aria-controls="side-nav" aria-expanded="false">  <span>Menu</span>
+      </button>
+    </div>
+
+    <!-- Semi-transparent overlay background -->
+    <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+    
+    <!-- Sliding Navigation Drawer -->
+    <nav id="side-nav" class="side-nav" aria-label="Main Navigation">
+        <button id="close-nav" class="close-btn" aria-label="Close Navigation Menu">
+          &times;
+        </button>
+      </div>
+      
+      <ul class="nav-list">
+        <li class="nav-item"><a href="/index.html" class="nav-link">Tuis</a></li>
+        <li class="nav-item"><a href="/Pages-Files/preke.html" class="nav-link">Preke</a></li>
+        <li class="nav-item"><a href="/Pages-Files/bybelstudies.html" class="nav-link">Hulpbronne</a></li>
+        <li class="nav-item"><a href="/Pages-Files/oordenkings.html" class="nav-link">Oordenkings</a></li>
+        <li class="nav-item"><a href="/Pages-Files/aktiwiteite.html" class="nav-link">Aktiwiteite</a></li>
+        <li class="nav-item"><a href="/Pages-Files/hulpbronne.html" class="nav-link">Hulpbronne</a></li>
+        <li class="nav-item"><a href="/Pages-Files/audio-uitsending.html" class="nav-link">Audio - Uitsending</a></li>
+        <li class="nav-item"><a href="/Pages-Files/kontakons.html" class="nav-link">Kontak Ons</a></li>
       </ul>
     </nav>
   </header>

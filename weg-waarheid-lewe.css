@@ -110,6 +110,13 @@ ul.social-icons{
   margin-bottom: 10px;
 }
 
+ol{
+  padding: 0 25px;
+}
+
+ol li{
+  padding: 2.5px 0;
+}
 
 /*ID naming and behavoir*/
 #center-me{
@@ -127,49 +134,122 @@ h2.sub-header{
   font-size: clamp(1.5em, 2vw, 1em);
 }
 
-/*Navigation Section*/
-/* Navigation container */
-.navigation {
-  list-style: none;
+.parent-container {
   display: flex;
-  gap: 10px;
-  padding: 0;
-  margin: 0;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically (if parent has height) */
 }
 
-.navigation li {
-  position: relative;
+/*Navigation Bar Section*/
+.nav-toggle-btn {
+  display: inline-flex;
+  align-items: center;     /* Centers vertically (if parent has height) */
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--text-inverse);
+  background-color: var(--color-accent);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-.navigation a {
-  text-decoration: none;
-  color: var(--text-main);
-  /* Adjust to match your theme */
-  padding: 8px 12px;
-  display: block;
+.nav-toggle-btn:hover {
+  background-color: var(--color-accent-hover);
 }
 
-/* Dropdown menu (hidden by default) */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
+/* Overlay Background */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-page);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+  z-index: 10;
+}
+
+.nav-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Sliding Navigation Drawer */
+.side-nav {
+  position: fixed;
+  top: 0;
   left: 0;
+  height: 100vh;
+  width: 100%; /* Default width for Mobile */
+  max-width: 100%;
   background-color: var(--bg-card);
+  color: var(--text-color);
+  transform: translateX(-100%);
+  transition: transform var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Desktop/Tablet Rule */
+@media (min-width: 600px) {
+  .side-nav {
+    width: 350px /* 350px width on Desktop/Tablet */
+  }
+}
+
+.side-nav.is-open {
+  transform: translateX(0);
+}
+
+/* Nav Header & Close Button */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.nav-logo {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--text-main);
+  font-size: 2em;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2em 0.5em;
+}
+
+.close-btn:hover {
+  color: var(--color-accent-hover);
+}
+
+/* Navigation List */
+.nav-list {
   list-style: none;
-  padding: 10px 0;
-  min-width: 160px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 1em 0;
+  text-align: center;
 }
 
-.dropdown-menu li a {
-  padding: 8px 16px;
-  white-space: nowrap;
+.nav-link {
+  display: inline-block;
+  padding: 0.85em 1.5em;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.2s, color 0.2s;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
+.nav-link:hover {
+  background-color: var(--bg-subtle);
+  color: var(--color-accent);
 }
 
 /*Index.html css code*/
@@ -201,12 +281,19 @@ p.main-about{
 
 .act-article{
   text-align: center;
-  padding: 0 25%;
 }
 
 .act-buttons{
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 600px){
+  .act-buttons{
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+  }
 }
 
 button{
@@ -265,7 +352,7 @@ a button:hover{
 
 
 /*Images of the webpage section*/
-.logo-image {
+.logo-image, .bank-details img{
     width: 300px;
     display: block;
     margin: 0 auto;
