@@ -146,8 +146,8 @@ h2.sub-header{
   display: inline-flex;
   align-items: center;     /* Centers vertically (if parent has height) */
   gap: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
   font-weight: 900;
   color: var(--text-inverse);
   background-color: var(--color-accent);
@@ -164,10 +164,10 @@ h2.sub-header{
 .nav-overlay {
   position: fixed;
   inset: 0;
-  background-color: var(--bg-page);
+  background-color: inherit;
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 10;
 }
 
@@ -187,8 +187,8 @@ h2.sub-header{
   background-color: var(--bg-card);
   color: var(--text-color);
   transform: translateX(-100%);
-  transition: transform var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 999;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -197,7 +197,7 @@ h2.sub-header{
 /* Responsive Desktop/Tablet Rule */
 @media (min-width: 600px) {
   .side-nav {
-    width: 350px /* 350px width on Desktop/Tablet */
+    width: 350px; /* 350px width on Desktop/Tablet */
   }
 }
 
@@ -328,27 +328,30 @@ a button:hover{
   border-radius: 25px;
   display: block;
   margin: 0 auto;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
-.kriel-grid, .colins-grid{
+.kriel-grid, .colins-grid, .vroue-bybelstudies-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
 }
 
 .uitreike-card{
-  max-width: 200px;
   background: var(--bg-card);
   border-radius: 5px;
   align-content: center;
-  display: block;
+  display: inline-flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;     /* Centers vertically (if container has height) */
 }
 
+.card-title{
+  font-size: 1em;
+}
+
 .uitreike-card a{
-  font-size: 1.5em;
+  padding-left: 10px;
 }
 
 
