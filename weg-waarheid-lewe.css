@@ -289,7 +289,7 @@ p.main-about{
   gap: 10px;
 }
 
-@media (max-width: 600px){
+@media (min-width: 600px){
   .act-buttons{
     flex-direction: column;
     justify-content: center; /* Center horizontally */
@@ -318,17 +318,6 @@ a button:hover{
 
 .colins-house, .abraham-kriel-bermuda{
   margin: 0 30px;
-}
-.uitreike-images{
-  display: flex;
-}
-
-.uitreike-images img{
-  width: 300px;
-  border-radius: 25px;
-  display: block;
-  margin: 0 auto;
-  padding: 10px 0;
 }
 
 .kriel-grid, .colins-grid, .vroue-bybelstudies-grid{
@@ -364,4 +353,20 @@ a button:hover{
     width: 300px;
     display: block;
     margin: 0 auto;
+}
+
+.genesis img{
+  width: 300px;
+  border-radius: 25px;
+  padding: 10px 0;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.uitreike-images, .aktiwiteite-image{
+  width: 300px;
+  border-radius: 25px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
 }
