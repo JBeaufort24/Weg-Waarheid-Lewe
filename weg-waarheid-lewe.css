@@ -370,3 +370,49 @@ a button:hover{
   margin: 0 auto;
   padding: 10px 0;
 }
+
+/*Flexbox Card with Images and description*/
+/* Container to hold cards next to each other */
+.card-container {
+  display: flex;
+  gap: 10px; /* Space between cards */
+  flex-wrap: wrap; /* Allows cards to stack on smaller screens */
+  justify-content: center;
+}
+
+/* Individual card styling */
+.card {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and base width */
+  max-width: 350px;
+  border: 1px solid var(--bg-card);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-subtle);
+}
+
+/* Image formatting */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Keeps image proportions intact */
+  display: block;
+}
+
+/* Description area underneath the image */
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.25em;
+  color: var(--text-main);
+}
+
+.card-content p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
