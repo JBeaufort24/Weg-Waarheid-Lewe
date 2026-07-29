@@ -337,21 +337,25 @@ a button:hover{
   gap: 10px;
 }
 
-.uitreike-card{
+.download-card{
   background: var(--bg-card);
   border-radius: 5px;
+  height: 100px;
   align-content: center;
-  display: inline-flex;
+  display: flex;
   justify-content: center; /* Centers horizontally */
-  align-items: center;     /* Centers vertically (if container has height) */
+  align-items: center;     /* Centers vertically (if container has height)
+  */
+  flex-direction: column;
 }
 
 .card-title{
   font-size: 1em;
 }
 
-.uitreike-card a{
-  padding-left: 10px;
+.download-card a{
+  padding: 10px;
+  font-size: 1.5em;
 }
 
 
