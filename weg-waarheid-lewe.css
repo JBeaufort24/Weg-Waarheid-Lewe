@@ -124,6 +124,10 @@ ol li{
   text-align: center;
 }
 
+#small-letters{
+  font-size: .6em;
+}
+
 /*Different Headers to Webpage*/
 h1.header{
   color: var(--color-primary);
@@ -415,4 +419,54 @@ a button:hover{
   margin: 0;
   color: var(--text-muted);
   line-height: 1.4;
+}
+
+
+/*Tabel content and layout structure for tables*/
+/* Container for responsive scrolling on small screens */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+/* Base table layout */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: inherit;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header styling */
+.custom-table thead tr {
+  background-color: #1e293b;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Alternating row colors for readability */
+.custom-table tbody tr:nth-of-type(even) {
+  background-color: #f8fafc;
+}
+
+/* Hover effect on rows */
+.custom-table tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+.custom-table td:first-child{
+  font-weight: 700;
 }
