@@ -474,3 +474,8 @@ a button:hover{
 .custom-table td:first-child{
   font-weight: 700;
 }
+
+/*Psalm Section*/
+.psalm-book p{
+  padding: 5px 0;
+}
