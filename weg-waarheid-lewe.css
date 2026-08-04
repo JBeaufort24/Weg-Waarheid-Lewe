@@ -501,7 +501,7 @@ a button:hover{
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-@media (min-width: 500px){
+@media (min-width: 400px){
   .sermon-card{
     max-width: 100%;
   }
