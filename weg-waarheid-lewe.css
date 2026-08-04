@@ -582,21 +582,21 @@ a button:hover{
   background-color: var(--bg-subtle);
 }
 
+/*Preke Pages and sections
 /* Container Layout */
 .preke-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin: 0 auto;
-  padding: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding: 10px;
 }
 
 /* Base Card Structure */
 .preke-card {
   position: relative;
-  background-color: #ededed;
-  border-radius: 16px;
+  background-color: var(--bg-page);
+  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -622,7 +622,7 @@ a button:hover{
   margin-left: 24px;
   margin-right: 24px;
   margin-bottom: 24px;
-  background-color: #ededed;
+  background-color: var(--bg-card);
   padding: 20px;
   border-radius: 4px;
   box-sizing: border-box;
@@ -631,30 +631,30 @@ a button:hover{
 /* Typography & Button */
 .preke-title {
   margin: 0 0 10px 0;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--text-main);
 }
 
 .preke-description {
   margin: 0 0 20px 0;
-  font-size: 0.95rem;
+  font-size: 0.95em;
   line-height: 1.4;
-  color: #555555;
+  color: var(--text-muted);
 }
 
 .preke-button {
   display: inline-block;
-  background-color: #4b6b9d;
-  color: #ffffff;
+  background-color: var(--color-accent);
+  color: var(--text-inverse);
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 5px;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: 600;
   transition: background-color 0.2s ease;
 }
 
 .preke-button:hover {
-  background-color: #3b5782;
+  background-color: var(--color-accent-hover);
 }
