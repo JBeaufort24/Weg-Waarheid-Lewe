@@ -482,9 +482,15 @@ a button:hover{
 
 
 /*Audio Files and Player*/
+.preke-audio{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
+}
+
 /* Card Container */
 .sermon-card {
-  max-width: 480px;
+  max-width: 350px;
   background-color: var(--bg-card);
   border-radius: 12px;
   padding: 24px; /* Generous touch target & spacing */
@@ -588,3 +594,5 @@ a button:hover{
   background-color: var(--color-primary);
   color: var(--text-inverse);
 }
+
+
