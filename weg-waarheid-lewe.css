@@ -520,28 +520,6 @@ a button:hover{
   margin-bottom: 20px;
 }
 
-/* Initials Avatar Replacement */
-.speaker-avatar-fallback {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background-color: var(--bg-subtle);
-  color: var(--color-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 1.125rem;
-  flex-shrink: 0;
-}
-
-/* Metadata & Typography */
-.sermon-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .sermon-date {
   font-size: 0.8125rem; /* ~13px minimum for readability */
   font-weight: 700;
@@ -571,15 +549,11 @@ a button:hover{
   gap: 12px;
 }
 
-.sermon-player-row audio {
-  flex: 1;
-  height: 44px; /* Slightly taller for larger touch/click targets */
-  border-radius: 22px;
-  outline: none;
-}
-
-.sermon-player-row audio::-webkit-media-controls-panel {
-  background-color: var(--bg-subtle);
+a.player-link{
+  text-align: center;
+  font-weight: 700;
+  color: var(--text-inverse);
+  text-decoration: none;
 }
 
 /*Preke Pages and sections
@@ -591,6 +565,8 @@ a button:hover{
   margin: 0 auto;
   padding: 10px;
 }
+
+preke-audio
 
 /* Base Card Structure */
 .preke-card {
