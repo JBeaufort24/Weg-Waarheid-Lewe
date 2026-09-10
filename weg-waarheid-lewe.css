@@ -634,3 +634,19 @@ preke-audio
 .preke-button:hover {
   background-color: var(--color-accent-hover);
 }
+
+.image-gallery img{
+  width: 200px;
+}
+
+main.voorskool{
+  text-align: center;
+}
+
+p.voorskool-para{
+  padding: 10px 30px;
+}
+
+h3.voorskool-sub{
+  padding-top: 20px;
+}
