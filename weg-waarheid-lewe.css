@@ -730,6 +730,7 @@ h3.voorskool-sub{
 
 .openbaring .download-card, .audio-player-card{
   max-width: 100%;
+  font-size: var(--fs-h4);
 }
 
 .openbaring b{
@@ -765,7 +766,7 @@ h3.voorskool-sub{
 /* Audio Player Section */
 .player-body audio {
   width: 100%;
-  height: 30px;
+  height: 50px;
   border-radius: 8px;
   outline: none;
 }
