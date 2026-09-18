@@ -777,6 +777,147 @@ video{
   outline: none;
 }
 
+/*Footer Style*/
+/* Footer Styles */
+.site-footer {
+  background-color: #1a202c;
+  color: #e2e8f0;
+  padding: 4rem 1.5rem 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+}
+
+/* Responsive Grid Breakpoints */
+@media (min-width: 640px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
+}
+
+/* Brand Section */
+.footer-logo {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+.footer-subtitle {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+}
+
+.footer-motto {
+  font-size: 0.8rem;
+  color: #cbd5e0;
+  margin-bottom: 1rem;
+}
+
+.service-time {
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+/* Headings */
+.footer-heading {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Links List */
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+  color: #cbd5e0;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, padding-left 0.2s ease-in-out;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: #63b3ed;
+  padding-left: 4px;
+}
+
+/* Contact Info */
+.footer-contact li {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #cbd5e0;
+}
+
+.footer-contact a {
+  color: #63b3ed;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: #2d3748;
+  color: #ffffff;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+  background-color: #3182ce;
+  transform: translateY(-2px);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid #2d3748;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #a0aec0;
+}
+
+
 /*Media Qeuries*/
 @media (min-width: 400px) {
   .sermon-card {
