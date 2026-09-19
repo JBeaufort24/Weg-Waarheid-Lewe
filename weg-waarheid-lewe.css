@@ -782,11 +782,11 @@ video{
 /*Footer Style*/
 /* Footer Styles */
 .site-footer {
-  background-color: #1a202c;
+  background-color: var(--text-main);
   color: #e2e8f0;
-  padding: 4rem 1.5rem 1.5rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
+  padding: 2em 1.5em 1.5em;
+  font-family: Atkinson Hyperlegible;
+  line-height: 1.1;
 }
 
 .footer-container {
@@ -794,41 +794,41 @@ video{
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2.5rem;
+  gap: 1.5em;
 }
 
 /* Brand Section */
 .footer-logo {
-  color: #ffffff;
-  font-size: 1.25rem;
+  color: var(--bg-card);
+  font-size: 1.2em;
   font-weight: 700;
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.25em 0;
 }
 
 .footer-subtitle {
-  color: #a0aec0;
+  color: var(--bg-subtle);
   font-size: 0.9rem;
   margin: 0 0 1rem 0;
 }
 
 .footer-motto {
-  font-size: 0.8rem;
-  color: #cbd5e0;
-  margin-bottom: 1rem;
+  font-size: 0.8em;
+  color: var(--bg-subtle-hover);
+  margin-bottom: 1em;
 }
 
 .service-time {
   font-size: 0.9rem;
-  color: #e2e8f0;
+  color: var(--bg-card);
 }
 
 /* Headings */
 .footer-heading {
-  color: #ffffff;
-  font-size: 1rem;
+  color: var(--bg-card);
+  font-size: 1em;
   font-weight: 600;
-  margin: 0 0 1rem 0;
-  letter-spacing: 0.05em;
+  margin: 0 0 1em 0;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -841,58 +841,43 @@ video{
 }
 
 .footer-links li {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.6em;
 }
 
 .footer-links a {
-  color: #cbd5e0;
+  color: var(--bg-subtle);
   text-decoration: none;
-  transition: color 0.2s ease-in-out, padding-left 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, padding-top 0.2s ease-in-out;
 }
 
 .footer-links a:hover,
 .footer-links a:focus {
-  color: #63b3ed;
-  padding-left: 4px;
+  color: var(--color-accent);
+  padding-top: 4px;
 }
 
 /* Contact Info */
 .footer-contact li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.7em;
   font-size: 0.95rem;
-  color: #cbd5e0;
+  color: var(--bg-subtle);
 }
 
 .footer-contact a {
-  color: #63b3ed;
+  color: var(--bg-subtle-hover);
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
 .footer-contact a:hover {
   text-decoration: underline;
+  color: var(--color-accent-hover);
 }
 
 /* Social Icons */
 .social-links {
   display: flex;
-  gap: 0.75rem;
-}
-
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  background-color: #2d3748;
-  color: #ffffff;
-  border-radius: 50%;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.social-links a:hover {
-  background-color: #3182ce;
-  transform: translateY(-2px);
+  gap: 0.7em;
 }
 
 /* Bottom Bar */
@@ -900,10 +885,10 @@ video{
   max-width: 1200px;
   margin: 3rem auto 0;
   padding-top: 1.5rem;
-  border-top: 1px solid #2d3748;
+  border-top: 1px solid var(--bg-subtle-hover);
   text-align: center;
-  font-size: 0.85rem;
-  color: #a0aec0;
+  font-size: 0.8em;
+  color: whitesmoke;
 }
 
 /*Media Qeuries*/
