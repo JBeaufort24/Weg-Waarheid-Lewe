@@ -300,8 +300,10 @@ p.main-about{
 
 .act-buttons{
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
+
 
 button{
   padding: 12px 16px;
@@ -795,19 +797,6 @@ video{
   gap: 2.5rem;
 }
 
-/* Responsive Grid Breakpoints */
-@media (min-width: 640px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer-container {
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  }
-}
-
 /* Brand Section */
 .footer-logo {
   color: #ffffff;
@@ -917,17 +906,18 @@ video{
   color: #a0aec0;
 }
 
-
 /*Media Qeuries*/
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .sermon-card {
     max-width: 100%;
   }
   
   .act-buttons{
-    flex-direction: column;
-    justify-content: center; /* Center horizontally */
-    align-items: center; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -935,5 +925,18 @@ video{
 @media (min-width: 600px) {
   .side-nav {
     width: 350px; /* 350px width on Desktop/Tablet */
+  }
+}
+
+/* Responsive Grid Breakpoints */
+@media (min-width: 640px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
   }
 }
