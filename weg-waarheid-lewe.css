@@ -335,6 +335,12 @@ a button:hover{
   gap: 10px;
 }
 
+#laerskool-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+}
+
 .download-card{
   background: var(--bg-card);
   border-radius: 5px;
