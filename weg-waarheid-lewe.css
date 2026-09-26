@@ -883,7 +883,8 @@ video{
 /* Social Icons */
 .social-links {
   display: flex;
-  gap: 0.7em;
+  gap: 0.9em;
+  font-size: 2em;
 }
 
 /* Bottom Bar */
