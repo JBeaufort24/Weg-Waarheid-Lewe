@@ -369,6 +369,10 @@ a button:hover{
     margin: 0 auto;
 }
 
+.bank-details img{
+  width: 500px;
+}
+
 .genesis img{
   width: 300px;
   border-radius: 25px;
@@ -915,6 +919,10 @@ video{
     justify-content: center;
     align-items: center;
   }
+  
+  .bank-details img{
+    max-width: 300px;
+  }
 }
 
 /* Responsive Desktop/Tablet Rule */
@@ -934,5 +942,9 @@ video{
 @media (min-width: 1024px) {
   .footer-container {
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  }
+  
+  .bank-details img{
+    max-width: 500px;
   }
 }
