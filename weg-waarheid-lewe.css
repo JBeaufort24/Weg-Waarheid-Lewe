@@ -494,6 +494,10 @@ a button:hover{
   gap: 10px;
 }
 
+.preke-video{
+  height: 100vh;
+}
+
 /* Card Container */
 .sermon-card {
   max-width: 350px;
