@@ -687,7 +687,7 @@ video{
 .bottom-nav-container {
     /* Position sticky allows bar to stay fixed until it hits parent's end (above footer) */
     position: sticky;
-    bottom: 0;
+    top: 0;
     z-index: 10;
     width: 100%;
     backdrop-filter: blur(10px);
@@ -725,7 +725,7 @@ video{
 
 .nav-item i {
     font-size: 1.125em;
-    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
     transition: transform 0.2s ease;
 }
 
@@ -916,7 +916,7 @@ video{
    
    .nav-item i {
      font-size: 2em;
-     margin-bottom: 0.15rem;
+     margin-top: 0.15rem;
    }
    
    .nav-span {
