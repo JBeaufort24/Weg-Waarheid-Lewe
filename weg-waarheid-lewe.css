@@ -160,113 +160,6 @@ h2.sub-header{
   align-items: center;     /* Centers vertically (if parent has height) */
 }
 
-/*Navigation Bar Section*/
-.nav-toggle-btn {
-  display: inline-flex;
-  align-items: center;     /* Centers vertically (if parent has height) */
-  gap: 0.5rem;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 900;
-  color: var(--text-inverse);
-  background-color: var(--color-accent);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.nav-toggle-btn:hover {
-  background-color: var(--color-accent-hover);
-}
-
-/* Overlay Background */
-.nav-overlay {
-  position: fixed;
-  inset: 0;
-  background-color: inherit;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 10;
-}
-
-.nav-overlay.is-active {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Sliding Navigation Drawer */
-.side-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%; /* Default width for Mobile */
-  max-width: 100%;
-  background-color: var(--bg-card);
-  color: var(--text-color);
-  transform: translateX(-100%);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 10;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.side-nav.is-open {
-  transform: translateX(0);
-}
-
-/* Nav Header & Close Button */
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-}
-
-.nav-logo {
-  font-size: 2em;
-  font-weight: 700;
-}
-
-.close-btn {
-  background: none;
-  border: none;
-  color: var(--text-main);
-  font-size: 2em;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0.2em 0.5em;
-}
-
-.close-btn:hover {
-  color: var(--color-accent-hover);
-}
-
-/* Navigation List */
-.nav-list {
-  list-style: none;
-  padding: 1em 0;
-  text-align: center;
-}
-
-.nav-link {
-  display: inline-block;
-  padding: 0.85em 1.5em;
-  color: var(--color-primary);
-  text-decoration: none;
-  font-size: 1em;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.nav-link:hover {
-  background-color: var(--bg-subtle);
-  color: var(--color-accent);
-  box-shadow: --shadow-card;
-  width: 100%;
-}
-
 /*Index.html css code*/
 header a{
   text-decoration: none;
@@ -274,7 +167,7 @@ header a{
 
 h2.main-header{
   color: var(--color-accent);
-  font-size: var(--fs-h3);
+  font-size: var(--fs-h2);
   margin-bottom: 15px;
 }
 
@@ -574,8 +467,6 @@ a.player-link{
   padding: 10px;
 }
 
-preke-audio
-
 /* Base Card Structure */
 .preke-card {
   position: relative;
@@ -793,6 +684,60 @@ video{
   outline: none;
 }
 
+.bottom-nav-container {
+    /* Position sticky allows bar to stay fixed until it hits parent's end (above footer) */
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.bottom-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    padding: 0 1rem;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-accent);
+    font-size: var(--fs-h3);
+    font-weight: 500;
+    padding: 1.4rem 1.6rem;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    flex: 1;
+    text-align: center;
+    max-width: 120px;
+}
+
+.nav-item i {
+    font-size: 1.125em;
+    margin-bottom: 0.25rem;
+    transition: transform 0.2s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: var(--color-accent-hover);
+    background-color: var(--bg-subtle-hover);
+}
+
+.nav-item:hover i {
+    transform: translateY(-2px);
+}
+
 /*Footer Style*/
 /* Footer Styles */
 .site-footer {
@@ -906,43 +851,79 @@ video{
   color: whitesmoke;
 }
 
-/*YouTube Playlist embedded*/
-.playlist-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #1a1a1a;
-  color: #ffffff;
-}
-
-@media (min-width: 768px) {
-  .playlist-container {
-    flex-direction: row;
-    height: 500px;
-  }
-}
-
-/* Main Video Player Area */
-.video-player-wrapper {
-  flex: 2;
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-player-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-  border: none;
-}
-
 /*Media Qeuries*/
+ /* Large Desktop Screens (width > 1024px) */
+ @media (min-width: 1025px) {
+   .bottom-nav {
+     justify-content: center;
+     gap: 2rem;
+   }
+   
+   .nav-item {
+     flex-direction: row;
+     gap: 0.6rem;
+     font-size: 0.95rem;
+     padding: 0.6rem 1.2rem;
+     max-width: none;
+     flex: initial;
+     height: 50px;
+   }
+   
+   .nav-item i {
+     margin-bottom: 0;
+     font-size: 2rem;
+   }
+ }
+ 
+ /* Tablet Screens (600px - 1024px) */
+ @media (min-width: 601px) and (max-width: 1024px) {
+   .nav-item {
+     font-size: 0.8rem;
+     padding: 0.5rem;
+   }
+   
+   .nav-item i {
+     font-size: 2rem;
+   }
+ }
+ 
+ /* Mobile Screens (width <= 600px) */
+ @media (max-width: 600px) {
+   header {
+     padding: 1.5rem 1rem;
+   }
+   
+   header h1 {
+     font-size: 1.5rem;
+   }
+   
+   main {
+     padding: 1rem 1rem 4rem 1rem;
+   }
+   
+   .content-section {
+     padding: 1.25rem;
+   }
+   
+   .bottom-nav {
+     padding: 0 0.25rem;
+   }
+   
+   .nav-item {
+     
+     padding: 0.3rem 0.1rem;
+   }
+   
+   .nav-item i {
+     font-size: 2em;
+     margin-bottom: 0.15rem;
+   }
+   
+   .nav-span {
+    font-size: 6px;
+  }
+ }
+ 
 @media (min-width: 300px) {
   .sermon-card {
     max-width: 100%;
@@ -963,9 +944,20 @@ video{
 
 /* Responsive Desktop/Tablet Rule */
 @media (min-width: 600px) {
-  .side-nav {
-    width: 350px; /* 350px width on Desktop/Tablet */
-  }
+  header {
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+main {
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+.content-section {
+  padding: 1.25rem;
 }
 
 /* Responsive Grid Breakpoints */
@@ -983,4 +975,25 @@ video{
   .bank-details img{
     max-width: 500px;
   }
+}
+ 
+ /* Mobile Screens (width <= 600px) */
+ @media (max-width: 600px) {
+   header {
+     padding: 1.5rem 1rem;
+   }
+   
+   header h1 {
+     font-size: 1.5rem;
+   }
+   
+   main {
+     padding: 1rem 1rem 4rem 1rem;
+   }
+   
+   .content-section {
+     padding: 1.25rem;
+   }
+ }
+ 
 }
