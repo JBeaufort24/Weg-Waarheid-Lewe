@@ -143,6 +143,10 @@ ol li{
   color: red;
 }
 
+#blurred-image {
+  filter: blur(5px);
+}
+
 /*Different Headers to Webpage*/
 h1.header{
   color: var(--color-primary);
